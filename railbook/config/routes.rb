@@ -15,4 +15,5 @@ Rails.application.routes.draw do
   get 'record/find_by2'
   get 'record/where'
   get 'record/where2'
+  get 'record/where3'
 end

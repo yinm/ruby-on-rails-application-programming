@@ -23,4 +23,9 @@ class RecordController < ApplicationController
     @books = Book.where(publish: '技術評論社', price: 2980)
     render 'hello/list'
   end
+
+  def where3
+    @books = Book.where(published: '2016-06-01'..'2016-12-31')
+    render 'hello/list'
+  end
 end
