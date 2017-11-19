@@ -1,24 +1,8 @@
-# README
+# memo
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## コマンド
 
-Things you may want to cover:
+### `rails db`
+* `config/database.yml`で定義した接続情報に従って、データベースクライアントをを起動できる
+* `rails dbconsole`の省略形
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
