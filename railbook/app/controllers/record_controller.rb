@@ -18,4 +18,9 @@ class RecordController < ApplicationController
     @books = Book.where(publish: '技術評論社')
     render 'hello/list'
   end
+
+  def where2
+    @books = Book.where(publish: '技術評論社', price: 2980)
+    render 'hello/list'
+  end
 end
