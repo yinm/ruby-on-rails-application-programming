@@ -28,4 +28,10 @@ class RecordController < ApplicationController
     @books = Book.where(published: '2016-06-01'..'2016-12-31')
     render 'hello/list'
   end
+
+  def where4
+    # @books = Book.where(publish: ['技術評論社', '翔泳社'])
+    @books = Book.where(publish: %w{技術評論社 翔泳社})
+    render 'hello/list'
+  end
 end
