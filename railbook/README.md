@@ -21,3 +21,11 @@
 * `ファイル名.フォーマット名.テンプレートエンジン名` になっている
   * e.g.) `index.html.erb`: `ERB`を使って、`HTML形式`の出力をするテンプレートファイル
   * e.g.) `index.json.jbuilder`: `JBuilder`を使って、`JSON形式`の出力をするテンプレートファイル
+  
+### Unobtrusive JavaScript (控えめなJavaScript)
+* HTMLとJSを分離する(HTMlの中にJSが出しゃばらないようにする)と言う考え方
+* RailsにおけるJSに対するポリシーも、こちらになる
+  * そのため、`data-`の属性がついているものは、Railsが提供しているJSライブラリがその値に基づいて、何らかの処理していると考えればいい
+  * e.g.) `<%= link_to 'Destroy', book, method: :delete, data: { confirm: 'Are you sure?' } %>`
+
+
