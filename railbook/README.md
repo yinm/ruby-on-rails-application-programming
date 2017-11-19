@@ -13,6 +13,10 @@
 * `where(カラム名: A..B)`
 * e.g.) `@books = Book.where(published: '2016-06-01'..'2016-12-31')`
 
+### in
+* `where(カラム名: 配列)`
+* e.g.) `@books = Book.where(publish: ['技術評論社', '翔泳社'])`
+
 ## コマンド
 
 ### railsコマンド - ドキュメント
