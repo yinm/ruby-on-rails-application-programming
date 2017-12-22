@@ -14,6 +14,11 @@ class RecordController < ApplicationController
     render 'books/show'
   end
 
+  def find_by_practice
+    @book = Book.find_by(publish: '技術評論社')
+    render 'books/show'
+  end
+
   def find_by2
     @book = Book.find_by(publish: '技術評論社', price: 2980)
     render 'books/show'
