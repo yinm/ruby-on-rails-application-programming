@@ -27,7 +27,6 @@ config/initializers/secret_token.rb
 ## Environment normalization:
 /.bundle
 /vendor/bundle
-railbook/vendor/bundler/
 
 # these should all be checked in to normalize the environment:
 # Gemfile.lock, .ruby-version, .ruby-gemset
@@ -47,3 +46,6 @@ bower.json
 .byebug_history
 
 
+
+# Ignore master key for decrypting credentials and more.
+/config/master.key
