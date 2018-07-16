@@ -1,6 +1,9 @@
 class User < ApplicationRecord
   validates :agreement, acceptance: { on: :create }
-  validates :email, presence: { unless: :sendmail? }
+  with_options unless: :sendmail? do |dm|
+    dm.validates :email, presence: true
+    dm.validates :roles, presence: true
+  end
 
   def sendmail?
     dm.blank?
