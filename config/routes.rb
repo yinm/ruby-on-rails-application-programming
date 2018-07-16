@@ -12,4 +12,9 @@ Rails.application.routes.draw do
 
   get 'record/keywd'
   post 'record/keywd_process'
+
+  get 'ctrl/para(/:id)' => 'ctrl#para'
+  get 'ctrl/para_array'
+  get 'ctrl/req_head'
+  get 'ctrl/req_head2'
 end
