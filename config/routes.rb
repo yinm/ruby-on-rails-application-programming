@@ -14,4 +14,5 @@ Rails.application.routes.draw do
   post 'record/keywd_process'
 
   get 'ctrl/para(/:id)' => 'ctrl#para'
+  get 'ctrl/para_array'
 end
