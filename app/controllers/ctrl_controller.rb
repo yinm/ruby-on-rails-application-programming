@@ -6,4 +6,8 @@ class CtrlController < ApplicationController
   def para_array
     render plain: 'categoryパラメーター:' + params[:category].inspect
   end
+
+  def req_head
+    render plain: request.headers['User-Agent']
+  end
 end
