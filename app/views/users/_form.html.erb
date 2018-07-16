@@ -27,6 +27,11 @@
   </div>
 
   <div class="field">
+    <%= form.label :email_confirmation %><br />
+    <%= form.text_field :email_confirmation %>
+  </div>
+
+  <div class="field">
     <%= form.label :dm %>
     <%= form.check_box :dm %>
   </div>
@@ -34,6 +39,11 @@
   <div class="field">
     <%= form.label :roles %>
     <%= form.text_field :roles %>
+  </div>
+
+  <div class="field">
+    <%= form.label :agreement %><br />
+    <%= form.check_box :agreement %>
   </div>
 
   <div class="field">
@@ -45,3 +55,5 @@
     <%= form.submit %>
   </div>
 <% end %>
+
+
