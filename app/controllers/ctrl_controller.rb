@@ -28,6 +28,6 @@ class CtrlController < ApplicationController
   end
 
   def redirect
-    redirect_to books_path
+    redirect_back fallback_location: { controller: 'hello', action: 'index' }
   end
 end
