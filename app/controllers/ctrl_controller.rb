@@ -26,4 +26,8 @@ class CtrlController < ApplicationController
   def plain_render
     render inline: 'リクエスト情報: <%= debug request.headers %>'
   end
+
+  def redirect
+    redirect_to books_path
+  end
 end
