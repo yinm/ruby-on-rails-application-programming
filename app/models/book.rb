@@ -1,4 +1,6 @@
 class Book < ApplicationRecord
+  has_many :reviews
+
   validate :isbn_valid?
   validates :isbn,
     presence: { message: 'は必須です' },

@@ -14,4 +14,12 @@ class CtrlController < ApplicationController
   def req_head2
     @headers = request.headers
   end
+
+  def double_render
+    @book = Book.find(6)
+    if @book.reviews.empty?
+      render 'simple_info' and return
+    end
+    render 'details_info'
+  end
 end

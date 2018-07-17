@@ -17,4 +17,5 @@ Rails.application.routes.draw do
   get 'ctrl/para_array'
   get 'ctrl/req_head'
   get 'ctrl/req_head2'
+  get 'ctrl/double_render'
 end
