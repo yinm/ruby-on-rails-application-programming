@@ -20,4 +20,5 @@ Rails.application.routes.draw do
   get 'ctrl/double_render'
   get 'ctrl/plain_render'
   get 'ctrl/redirect'
+  get 'ctrl/log'
 end

@@ -30,4 +30,14 @@ class CtrlController < ApplicationController
   def redirect
     redirect_back fallback_location: { controller: 'hello', action: 'index' }
   end
+
+  def log
+    logger.unknown('unknown')
+    logger.fatal('fatal')
+    logger.error('error')
+    logger.warn('warn')
+    logger.info('info')
+    logger.debug('debug')
+    render plain: 'ログはコンソール、またはログファイルから確認してください'
+  end
 end
