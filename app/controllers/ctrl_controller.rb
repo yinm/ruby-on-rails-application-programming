@@ -22,4 +22,8 @@ class CtrlController < ApplicationController
     end
     render 'details_info'
   end
+
+  def plain_render
+    render inline: 'リクエスト情報: <%= debug request.headers %>'
+  end
 end

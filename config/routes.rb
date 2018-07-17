@@ -18,4 +18,5 @@ Rails.application.routes.draw do
   get 'ctrl/req_head'
   get 'ctrl/req_head2'
   get 'ctrl/double_render'
+  get 'ctrl/plain_render'
 end
