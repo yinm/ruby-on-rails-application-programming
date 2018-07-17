@@ -40,4 +40,18 @@ class CtrlController < ApplicationController
     logger.debug('debug')
     render plain: 'ログはコンソール、またはログファイルから確認してください'
   end
+
+  def cookie
+    @email = cookies[:email]
+  end
+
+  def cookie_rec
+    cookies[:email] = {
+      value: params[:email],
+      expires: 3.months.from_now,
+      http_only: true,
+    }
+
+    render plain: 'クッキーを保存しました'
+  end
 end

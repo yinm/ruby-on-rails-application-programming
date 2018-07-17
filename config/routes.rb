@@ -21,4 +21,6 @@ Rails.application.routes.draw do
   get 'ctrl/plain_render'
   get 'ctrl/redirect'
   get 'ctrl/log'
+  get 'ctrl/cookie'
+  post 'ctrl/cookie_rec'
 end
